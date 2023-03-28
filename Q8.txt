@@ -1,0 +1,15 @@
+Q.8. 
+What is the difference between ‘Exception' and ‘error' in java? 
+In Java, both Exception and Error are types of Throwable, but they represent different types of problems that can occur in a program.
+
+An Exception is an object that represents an exceptional condition that can be handled by the program. An exception can be caused by either the application or the user, and it is typically recoverable. For example, a program can catch an exception when it encounters an error condition and take appropriate action to recover from it.
+
+On the other hand, an Error is a severe problem that is usually not recoverable by the program. Errors are caused by the environment in which the program is running, such as hardware failures, out of memory conditions, and stack overflows. Errors indicate that something has gone seriously wrong and the program should not attempt to recover from it.
+
+Here are some key differences between Exception and Error in Java:
+
+Exceptions are caused by the application or user, while errors are caused by the environment in which the program is running.
+Exceptions are typically recoverable, while errors are not.
+Exceptions are part of the normal flow of the program, while errors are not.
+Exceptions are checked by the compiler, while errors are not.
+In general, it is recommended to catch and handle exceptions in Java programs to make them more robust and reliable. However, it is usually not advisable to catch and handle errors, as they indicate severe problems that cannot be easily fixed by the program. Instead, errors should be logged and reported to the system administrator for further investigation.

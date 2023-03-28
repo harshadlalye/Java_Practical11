@@ -1,0 +1,24 @@
+Q.10. 
+What is the difference between ‘throw' and ‘throws’? And it's application?
+In Java, throw and throws are two related but distinct keywords used for handling exceptions.
+
+throw is used to throw an exception explicitly from a method or block of code. It is followed by an instance of the exception class that is being thrown. For example, the following code throws an IllegalArgumentException with a message "Invalid argument":
+
+public void processInput(int input) {
+    if (input < 0) {
+        throw new IllegalArgumentException("Invalid argument");
+    }
+    // process the input
+}
+
+throws is used to declare that a method or constructor can throw one or more types of exceptions. It is followed by a list of exception types that may be thrown by the method or constructor. For example, the following code declares that the readFile method may throw an IOException:
+
+public void readFile(String filename) throws IOException {
+    // read the file contents
+}
+
+The key difference between throw and throws is that throw is used to actually throw an exception, while throws is used to declare that a method or constructor may throw an exception.
+
+In practice, throw is used to handle exceptions locally, by throwing an exception and handling it in the same method or block of code. On the other hand, throws is used to propagate exceptions up the call stack, by declaring that a method or constructor may throw an exception and allowing the calling method or code block to handle it.
+
+In summary, throw is used to throw an exception explicitly, while throws is used to declare that a method or constructor may throw an exception. The throw keyword is typically used for handling exceptions locally, while the throws keyword is typically used for propagating exceptions up the call stack.

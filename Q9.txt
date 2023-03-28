@@ -1,0 +1,9 @@
+Q.9. 
+Can we have an empty catch block? Justify
+Yes, it is technically possible to have an empty catch block in Java. An empty catch block is a catch block that has no code or statements inside its body.
+
+However, having an empty catch block is generally considered a bad programming practice, and it is strongly discouraged. The reason is that an empty catch block essentially means that the program is ignoring an exception that has occurred, and it provides no information or indication to the developer or user of the program about what went wrong or how to fix it.
+
+In some cases, it might be necessary to catch an exception but do nothing about it, for example, if the exception is expected and can be safely ignored. However, in such cases, it is still recommended to log the exception or print a message to the console, so that the developer or user can at least be aware that an exception occurred.
+
+In general, it is better to handle exceptions explicitly, by either fixing the underlying problem or reporting the error to the user or system administrator. If an exception cannot be handled or fixed, it is better to allow it to propagate up the call stack, so that it can be caught and handled at a higher level of the program or reported as a fatal error.
